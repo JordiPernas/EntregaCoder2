@@ -15,7 +15,6 @@ header{
     border-top: 10px solid rgb(26, 102, 16);
     border-bottom: 10px solid rgb(26, 102, 16);
     text-align: right;
-    display: flex;
 }
 
 .navegador ul{
