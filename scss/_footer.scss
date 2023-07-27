@@ -1,0 +1,64 @@
+.cotizaciones{
+
+    border: 3px solid black;
+    width: 200px;
+    background-color: darkolivegreen;
+}
+
+.form-credito{
+
+    border: 3px solid black;
+    width: 300px;
+    background-color: darkolivegreen;
+
+}
+
+.credito-personal{
+
+    width: 250px;
+
+}
+
+
+.redes{
+
+    border: 5px solid rgb(26, 102, 16);
+    background-color: black;
+    color: white;
+
+
+}
+
+
+.redes i{
+
+    font-size: 15px;
+}
+
+.descripcion-footer{
+    font-size: 25px;
+}
+@media(max-width:768px){
+   
+    .descripcion-footer{
+    font-size: 15px;
+    }
+    .footer div i{
+        font-size: 10px;
+    }
+}
+@media(max-width:452px){
+ 
+    .titulo-footer{
+
+        font-size: 20px;
+    
+    }
+    
+    .descripcion-footer{
+        font-size: 15px;
+    }
+    .footer div i{
+        font-size: 10px;
+    }
+}

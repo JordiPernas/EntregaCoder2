@@ -1,0 +1,38 @@
+.titulo-principal{
+    text-align: left;
+    color: green;
+    font-size: 50px;
+}
+
+.titulos{
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(26, 102, 16);
+}
+.titulo-footer{
+
+    font-size: 30px;
+
+}
+
+.texto-nosotros{
+
+    text-align: center;
+    margin: 30px;
+    font-style: italic;
+    font-size: 25px;
+}
+@media(max-width:768px){
+   
+    .titulo-footer{
+
+        font-size: 20px;
+    
+    }
+    .texto-nosotros{
+        font-size: 15px;
+    }
+}
+    

@@ -1,455 +1,450 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-header{ 
-    background-color: black;
-    text-align: center;
-    height: auto;
-}
-.navegador{
-    border-top: 10px solid rgb(26, 102, 16);
-    border-bottom: 10px solid rgb(26, 102, 16);
-    text-align: right;
+.tarjeta button {
+  width: 70px;
+  border-radius: 5px;
 }
 
-.navegador ul{
-    display: flex;
-    justify-content: end;
-    list-style-type: none;
+.titulo-principal {
+  text-align: left;
+  color: green;
+  font-size: 50px;
 }
-.navegador ul li a{
-    text-decoration: none;
-    list-style: none;
-    font-weight: bold;
+
+.titulos {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 3px solid rgb(26, 102, 16);
+}
+
+.titulo-footer {
+  font-size: 30px;
+}
+
+.texto-nosotros {
+  text-align: center;
+  margin: 30px;
+  font-style: italic;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .titulo-footer {
     font-size: 20px;
-    margin: 0px 10px 30px 0px;
+  }
+  .texto-nosotros {
+    font-size: 15px;
+  }
+}
+header {
+  background-color: black;
+  text-align: center;
+  height: auto;
+}
+
+.navegador {
+  border-top: 10px solid rgb(26, 102, 16);
+  border-bottom: 10px solid rgb(26, 102, 16);
+  text-align: right;
+}
+.navegador ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+}
+.navegador ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px 10px 30px 0px;
+  display: block;
+  padding: 10px 20px;
+}
+
+.navunido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegador .menu {
+  display: none;
+}
+
+.linea1 {
+  background-color: green;
+  height: 7px;
+}
+
+.marcas {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#keller {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#honda {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#yamaha {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#bajaj {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#motomel {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#kawasaki {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#gilera {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#benelli {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#corven {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#zanella {
+  font-size: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+@media (max-width: 968px) {
+  .navegador {
+    position: static;
+  }
+  .navegador .menu {
+    order: -1;
     display: block;
-    padding: 10px 20px;
-}
-
-.navegador .menu{
-
-    display: none;
-}
-.titulo-principal{
-    text-align: left;
-    color: green;
-    font-size: 50px;
-}
-
-.linea1{
-    background-color: green;
-    height: 7px;
-}
-
-
-.marcas{
-    background-color: black;
-    text-align: center;
     color: white;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -900px;
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 200px;
+    transition: 0.4s;
+  }
+  .navunido {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 452px) {
+  .navegador .menu {
+    order: -1;
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .navegador .menu:hover + ul {
+    left: 0px;
+  }
+  .navegador ul:hover {
+    left: 0px;
+  }
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -700px;
+    background-color: white;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 200px;
+    transition: 0.4s;
+  }
+}
+.carousel-item img {
+  height: 720px;
+  object-fit: cover;
 }
 
-.portada{
-    width: 100%;
+#carouselExampleIndicators {
+  width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .carousel-item img {
     height: auto;
-    
-  
+  }
 }
-.portada img{
-    margin: 20px 0px 20px 0px;
-    width: 55%;
-}
-
-.titulos{
-
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: 3px solid rgb(26, 102, 16);
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
-
-
-.texto-nosotros{
-
-    text-align: center;
-    margin: 30px;
-    font-style: italic;
-
+.tarjeta {
+  border: 2px solid black;
+  width: 250px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px;
+  transition: 1s;
+}
+.tarjeta img {
+  width: 100%;
+}
+.tarjeta h3 {
+  text-align: center;
+}
+.tarjeta:hover {
+  background-color: green;
+  cursor: pointer;
+  font-style: italic;
 }
 
-.mapa{
-    font-size: 10px;
-}
-#keller{
-    font-size: 40px;
-    margin-top: 150px;
+.tarjeta:visited {
+  background-color: darkgreen;
 }
 
-#honda{
-
-    margin-top: 150px;
-    text-align: center;
-}
-#yamaha{ 
-
-    margin-top: 150px;
-    text-align: center;
-}
-
-#bajaj{
-
-    margin-top: 150px;
-    text-align: center;
-}
-
-#motomel{ 
-    margin-top: 150px;
-    text-align: center;
-
-}
-
-#kawasaki{
-
-    margin-top: 150px;
-    text-align: center;
-
-}
-
-#gilera{
-
-    margin-top: 150px;
-    text-align: center;
-
-}
-
-#benelli{
-
-    margin-top: 150px;
-    text-align: center;
-
-}
-
-#corven{ 
-
-    margin-top: 150px;
-    text-align: center;
-
-}
-
-#zanella{ 
-    
-    margin-top: 150px;
-    text-align: center;
-
-}
-.tarjetas{
+@media (max-width: 992px) {
+  .tarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-.carousel-item img{
-    height: 720px;
-    object-fit: cover;
-}
-/* no se como modificar el tema del tamaño de las tarjetas para que me quede bien, creo que es por la imagen, por favor cuando me evaluen necesito una ayuda con eso, muchas gracias*/
-.tarjeta{
-
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .tarjeta {
     border: 2px solid black;
     width: 250px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     margin: 10px 40px;
-    transition: 1s;
+  }
 }
-.tarjeta:hover{
-    background-color:green;
-    cursor: pointer;
-    font-style: italic;
-}
-.tarjeta:visited{
-    background-color: darkgreen;
-}
-
-.tarjeta img{
-    width: 100%;
-}
-
-.tarjeta h3{
-    text-align: center;
-}
-.tarjeta button{
-    width: 70px;
-    border-radius: 5px;
-}
-
-.cotizaciones{
-
-    border: 3px solid black;
-    width: 200px;
-    background-color: darkolivegreen;
-}
-
-.form-credito{
-
-    border: 3px solid black;
-    width: 300px;
-    background-color: darkolivegreen;
-
-}
-
-.credito-personal{
-
+@media (max-width: 768px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta {
+    border: 2px solid black;
     width: 250px;
-
-}
-
-.titulo-footer{
-
-    font-size: 30px;
-
-}
-
-.descripcion-footer{
-    font-size: 25px;
-}
-
-.redes{
-
-    border: 5px solid rgb(26, 102, 16);
-    background-color: black;
-    color: white;
-
-
-}
-
-
-.redes i{
-
-    font-size: 15px;
-}
-
-.formulario{
-    border: 3px solid black ;
-    border-radius: 10px;
-    color: white;
-    width: 900px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: rgb(26, 102, 16);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    text-align: center;
-    align-items: center;
-    box-shadow: 0px 0px 7px 12px #0C7D0B;
-}
-
-.formulario .dato{
+    padding: 5px;
     display: flex;
     flex-direction: column;
+    margin: 10px 40px;
+  }
 }
-.formulario .dato input{ 
-    background-color:black;
-    color: white;
-    border: none;
+@media (max-width: 452px) {
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta {
+    border: 2px solid black;
+    width: 175px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+  }
 }
-.formulario .dato input:focus{ 
-    background-color:rgba(0, 0, 0, 0.582);
-    border: none;
-    outline: none;
-}
-.formulario .dato textarea{ 
-    background-color:black;
-    color: white;
-    border: none;
-}
-.formulario .dato textarea:focus{ 
-    background-color:rgba(0, 0, 0, 0.582);
-    border: none;
-    outline: none;
-}
-.formulario .dato select:focus{ 
-    background-color:rgba(0, 0, 0, 0.582);
-    border: none;
-    outline: none;
+.mapa {
+  font-size: 10px;
+  overflow: hidden;
 }
 
-.formulario .dato select{ 
-    background-color:black;
-    color: white;
-    border: none;
+.mapabox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.formulario button{
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
+.formulario {
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+  width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: rgb(26, 102, 16);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px 12px #0C7D0B;
+}
+.formulario .dato {
+  display: flex;
+  flex-direction: column;
+}
+.formulario .dato input {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato input:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato textarea {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato textarea:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato select {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.formulario .dato select:focus {
+  background-color: rgba(0, 0, 0, 0.582);
+  border: none;
+  outline: none;
+}
+.formulario .dato button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 1126px) {
+  .formulario {
+    width: 700px;
+  }
+}
+@media (max-width: 898px) {
+  .formulario {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+}
+@media (max-width: 452px) {
+  .formulario {
+    width: 300px;
+  }
+}
+.cotizaciones {
+  border: 3px solid black;
+  width: 200px;
+  background-color: darkolivegreen;
+}
+
+.form-credito {
+  border: 3px solid black;
+  width: 300px;
+  background-color: darkolivegreen;
+}
+
+.credito-personal {
+  width: 250px;
+}
+
+.redes {
+  border: 5px solid rgb(26, 102, 16);
+  background-color: black;
+  color: white;
+}
+
+.redes i {
+  font-size: 15px;
+}
+
+.descripcion-footer {
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .descripcion-footer {
     font-size: 15px;
-    margin: 10px;
+  }
+  .footer div i {
+    font-size: 10px;
+  }
 }
-@media(max-width:1126px){
-    .formulario{
-        width: 700px ;
-    }
-}
-@media(max-width:992px){
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    
-    .tarjeta{
-    
-        border: 2px solid black;
-        width: 250px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        margin: 10px 40px;
-    }
-}
-@media(max-width:898px){
-    .formulario{
-        width: 600px ;
-    }
-}
-@media(max-width:768px){
-    .navegador{
-        position: static;
-    }
-    
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .tarjeta{
-    
-        border: 2px solid black;
-        width: 250px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        margin: 10px 40px;
-    }
-    .titulo-footer{
-
-        font-size: 20px;
-    
-    }
-    
-    .descripcion-footer{
-        font-size: 15px;
-    }
-    .footer div i{
-        font-size: 10px;
-    }
-    .formulario{
-        grid-template-columns: 1fr;
-        width: 400px;
-    }
-    .navegador .menu{
-        order: -1;
-        display: block;
-        color: white;
-        font-size: 30px;
-        margin: 10px
-    }
-    .navegador .menu:hover + ul{
-       
-        left: 0px;
-    }
-    .navegador ul:hover{
-        left: 0px;
-    }
-    .navegador ul{
-        position: fixed;
-        top: 0;
-        left: -700px;
-        background-color: white;
-        width: 80vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        padding-top: 200px;
-        transition: 0.4s;
-    }
+@media (max-width: 452px) {
+  .titulo-footer {
+    font-size: 20px;
+  }
+  .descripcion-footer {
+    font-size: 15px;
+  }
+  .footer div i {
+    font-size: 10px;
+  }
 }
 
-@media(max-width:452px){
-    .tarjetas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .tarjeta{
-    
-        border: 2px solid black;
-        width: 175px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        margin: 5px 5px;
-    }
-    .titulo-footer{
-
-        font-size: 20px;
-    
-    }
-    
-    .descripcion-footer{
-        font-size: 15px;
-    }
-    .footer div i{
-        font-size: 10px;
-    }
-
-
-    .formulario{
-        width: 300px ;
-    }
-    .navegador .menu{
-        order: -1;
-        display: block;
-        color: white;
-        font-size: 30px;
-        margin: 10px
-    }
-    .navegador .menu:hover + ul{
-       
-        left: 0px;
-    }
-    .navegador ul:hover{
-        left: 0px;
-    }
-    .navegador ul{
-        position: fixed;
-        top: 0;
-        left: -700px;
-        background-color: white;
-        width: 80vw;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        padding-top: 200px;
-        transition: 0.4s;
-    }
-}
+/*# sourceMappingURL=styles.css.map */
