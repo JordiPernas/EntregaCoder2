@@ -1,8 +1,18 @@
+
 .cotizaciones{
 
     border: 3px solid black;
-    width: 200px;
+    width: 300px;
     background-color: darkolivegreen;
+    text-align: center;
+    .titulo-cotizacion{
+        font-size: 25px;
+        color: black;
+     }
+    .precio-cotizacion{
+        font-size: 25px;
+        color: white;
+    }
 }
 
 .form-credito{
@@ -10,12 +20,26 @@
     border: 3px solid black;
     width: 300px;
     background-color: darkolivegreen;
-
+    .titulo-credito{
+        font-size: 25px;
+       
+    }
+    .telefono-credito{
+        font-size: 25px;
+       
+    }
+    .boton-credito{
+        border-radius: 5px;
+        font-size: 17px;
+        width: 100px;
+        background-color: white;
+        color: black;
+        border: 35px;
+    }
 }
-
 .credito-personal{
 
-    width: 250px;
+    width: auto;
 
 }
 
@@ -25,8 +49,14 @@
     border: 5px solid rgb(26, 102, 16);
     background-color: black;
     color: white;
-
-
+    .titulo-footer{
+        font-size: 50px;
+        text-align: center;
+    }
+    .fa-brands{
+        font-size: 20px;
+        text-align: center;
+    }
 }
 
 
@@ -36,6 +66,7 @@
 }
 
 .descripcion-footer{
+    text-align: center;
     font-size: 25px;
 }
 @media(max-width:768px){

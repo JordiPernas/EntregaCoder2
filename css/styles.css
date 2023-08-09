@@ -17,6 +17,7 @@
 }
 
 .titulos {
+  font-size: 40px;
   text-align: center;
   background-color: black;
   color: white;
@@ -57,6 +58,7 @@ header {
   display: flex;
   justify-content: end;
   list-style-type: none;
+  z-index: 10;
 }
 .navegador ul li a {
   text-decoration: none;
@@ -399,8 +401,17 @@ header {
 }
 .cotizaciones {
   border: 3px solid black;
-  width: 200px;
+  width: 300px;
   background-color: darkolivegreen;
+  text-align: center;
+}
+.cotizaciones .titulo-cotizacion {
+  font-size: 25px;
+  color: black;
+}
+.cotizaciones .precio-cotizacion {
+  font-size: 25px;
+  color: white;
 }
 
 .form-credito {
@@ -408,9 +419,23 @@ header {
   width: 300px;
   background-color: darkolivegreen;
 }
+.form-credito .titulo-credito {
+  font-size: 25px;
+}
+.form-credito .telefono-credito {
+  font-size: 25px;
+}
+.form-credito .boton-credito {
+  border-radius: 5px;
+  font-size: 17px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  border: 35px;
+}
 
 .credito-personal {
-  width: 250px;
+  width: auto;
 }
 
 .redes {
@@ -418,12 +443,21 @@ header {
   background-color: black;
   color: white;
 }
+.redes .titulo-footer {
+  font-size: 50px;
+  text-align: center;
+}
+.redes .fa-brands {
+  font-size: 20px;
+  text-align: center;
+}
 
 .redes i {
   font-size: 15px;
 }
 
 .descripcion-footer {
+  text-align: center;
   font-size: 25px;
 }
 
