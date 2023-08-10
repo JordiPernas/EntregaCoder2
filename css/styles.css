@@ -10,6 +10,12 @@
   border-radius: 5px;
 }
 
+.imagenes-galeria {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+}
+
 .titulo-principal {
   text-align: left;
   color: green;
@@ -32,7 +38,19 @@
   text-align: center;
   margin: 30px;
   font-style: italic;
+  font-size: 20px;
+}
+
+.subtitulo-galeria {
   font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+
+.subtitulo-contacto {
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -40,7 +58,7 @@
     font-size: 20px;
   }
   .texto-nosotros {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 header {
@@ -227,6 +245,10 @@ header {
     height: auto;
   }
 }
+.main a {
+  text-align: center;
+}
+
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
