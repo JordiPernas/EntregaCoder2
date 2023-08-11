@@ -231,6 +231,15 @@ header {
     transition: 0.4s;
   }
 }
+.nombre-marcas {
+  font-size: 40px;
+  font-style: italic;
+  background-color: green;
+  margin: 15px;
+  color: white;
+  border: 5px solid black;
+}
+
 .carousel-item img {
   height: 720px;
   object-fit: cover;
@@ -424,15 +433,16 @@ header {
 .footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: darkolivegreen;
+  background-color: green;
   border: 5px solid black;
+  font-weight: bolder;
 }
 
 .cotizaciones {
   display: flex;
   border: 3px solid black;
   width: 300px;
-  background-color: darkolivegreen;
+  background-color: green;
   margin: 5px;
   align-items: center;
   flex-direction: column;
@@ -442,6 +452,7 @@ header {
 }
 .cotizaciones h5 {
   color: black;
+  font-weight: bolder;
 }
 
 .form-credito {
@@ -450,16 +461,10 @@ header {
   width: 300px;
   margin: 5px;
   padding: 5px;
-  background-color: darkolivegreen;
+  background-color: green;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-}
-.form-credito .titulo-credito {
-  font-size: 25px;
-}
-.form-credito .telefono-credito {
-  font-size: 25px;
 }
 .form-credito .boton-credito {
   border-radius: 5px;
@@ -470,11 +475,17 @@ header {
   border: 35px;
 }
 
+.texto-footer {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .redes-footer {
   border: 3px solid black;
   width: 300px;
   margin: 5px;
-  background-color: darkolivegreen;
+  background-color: green;
   text-align: center;
 }
 .redes-footer .fa-brands {
