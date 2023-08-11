@@ -1,25 +1,40 @@
-
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:darkolivegreen;
+    border: 5px solid black;
+   
+}
 .cotizaciones{
 
+    display: flex;
     border: 3px solid black;
     width: 300px;
     background-color: darkolivegreen;
-    text-align: center;
-    .titulo-cotizacion{
-        font-size: 25px;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25px;
+    color: white;
+    h5{
         color: black;
-     }
-    .precio-cotizacion{
-        font-size: 25px;
-        color: white;
+        
     }
 }
 
 .form-credito{
 
+    display: flex;
     border: 3px solid black;
     width: 300px;
+    margin: 5px;
+    padding: 5px;
     background-color: darkolivegreen;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
     .titulo-credito{
         font-size: 25px;
        
@@ -37,59 +52,27 @@
         border: 35px;
     }
 }
-.credito-personal{
-
-    width: auto;
-
-}
-
-
-.redes{
-
-    border: 5px solid rgb(26, 102, 16);
-    background-color: black;
-    color: white;
-    .titulo-footer{
-        font-size: 50px;
-        text-align: center;
-    }
+.redes-footer{
+    border: 3px solid black;
+    width: 300px;
+    margin: 5px;
+    background-color: darkolivegreen;
+    text-align: center;
     .fa-brands{
         font-size: 20px;
         text-align: center;
     }
-}
-
-
-.redes i{
-
-    font-size: 15px;
-}
-
-.descripcion-footer{
-    text-align: center;
-    font-size: 25px;
+    .descripcion-footer{
+        text-align: center;
+        font-size: 25px;
+    }
 }
 @media(max-width:768px){
-   
-    .descripcion-footer{
-    font-size: 15px;
+    .footer{
+    flex-direction: column;
+    align-items: center;
     }
-    .footer div i{
-        font-size: 10px;
-    }
-}
-@media(max-width:452px){
- 
-    .titulo-footer{
-
-        font-size: 20px;
-    
-    }
-    
-    .descripcion-footer{
+    .cotizaciones{
         font-size: 15px;
-    }
-    .footer div i{
-        font-size: 10px;
     }
 }

@@ -421,25 +421,39 @@ header {
     width: 300px;
   }
 }
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: darkolivegreen;
+  border: 5px solid black;
+}
+
 .cotizaciones {
+  display: flex;
   border: 3px solid black;
   width: 300px;
   background-color: darkolivegreen;
-  text-align: center;
-}
-.cotizaciones .titulo-cotizacion {
-  font-size: 25px;
-  color: black;
-}
-.cotizaciones .precio-cotizacion {
+  margin: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   font-size: 25px;
   color: white;
 }
+.cotizaciones h5 {
+  color: black;
+}
 
 .form-credito {
+  display: flex;
   border: 3px solid black;
   width: 300px;
+  margin: 5px;
+  padding: 5px;
   background-color: darkolivegreen;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .form-credito .titulo-credito {
   font-size: 25px;
@@ -456,50 +470,29 @@ header {
   border: 35px;
 }
 
-.credito-personal {
-  width: auto;
-}
-
-.redes {
-  border: 5px solid rgb(26, 102, 16);
-  background-color: black;
-  color: white;
-}
-.redes .titulo-footer {
-  font-size: 50px;
+.redes-footer {
+  border: 3px solid black;
+  width: 300px;
+  margin: 5px;
+  background-color: darkolivegreen;
   text-align: center;
 }
-.redes .fa-brands {
+.redes-footer .fa-brands {
   font-size: 20px;
   text-align: center;
 }
-
-.redes i {
-  font-size: 15px;
-}
-
-.descripcion-footer {
+.redes-footer .descripcion-footer {
   text-align: center;
   font-size: 25px;
 }
 
 @media (max-width: 768px) {
-  .descripcion-footer {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cotizaciones {
     font-size: 15px;
-  }
-  .footer div i {
-    font-size: 10px;
-  }
-}
-@media (max-width: 452px) {
-  .titulo-footer {
-    font-size: 20px;
-  }
-  .descripcion-footer {
-    font-size: 15px;
-  }
-  .footer div i {
-    font-size: 10px;
   }
 }
 
